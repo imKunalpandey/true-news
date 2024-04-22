@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>True News</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    
+   <nav>
+    <div class="main-nav container flex">
+        <a href="#" onclick="reload()" class="company-logo">
+            <img src="img/logo.png" alt="company-logo">
+        </a>
+        <div class="nav-links">
+            <ul class="flex">
+                <li class="hover-link nav-item" id="IPL" onclick="onNavItemClick('IPL')">IPL</li>
+                <li class="hover-link nav-item" id="Business"onclick="onNavItemClick('Business')">Business</li>
+                <li class="hover-link nav-item" id="Politics"onclick="onNavItemClick('Politics')">Politics</li>
+                <li class="hover-link nav-item" id="Bihar"onclick="onNavItemClick('Bihar')">Bihar</li>
+                <li class="hover-link nav-item" id="Uttar Pradesh"onclick="onNavItemClick('Uttar Pradesh')">Uttar Pradesh</li>
+                <li class="hover-link nav-item" id="hollywood"onclick="onNavItemClick('hollywood')">Hollywood</li>
+                
+            </ul>
+        </div>
+        <div class="search-bar flex">
+            <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+            <button id="search-button" class="search-button">Search</button>
+        </div>
+    </div>
+   </nav> 
+   
+   <main>
+    <div class="cards-container container flex" id="cards-container">
+        
+
+ 
+    </div>
+   </main>
+
+   <template id="template-news-card">
+    <div class="card">
+        <div class="card-header">
+            <img src="img/pic.jpg" alt="news image" id="news-img">
+        </div>
+        <div class="card-content">
+            <h3 id="news-title">This is the tittle</h3>
+            <h6 class="news-source" id="news-source">End gadget 18/03/2024</h6>
+            <p class="news-desc" id="news-desc">PM Modi asks ministers to draft roadmap for first 100 days, next 5 years for new govt'</p>
+        </div>
+    </div>
+   </template>
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
